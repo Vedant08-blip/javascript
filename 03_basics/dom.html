@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!---selecting the element using DOM-->
+<!--By id selector-->
+    <p id="result">Hiiii</p>
+    <script>const value = document.getElementById("result")[0];</script>
+<!--By get element by name()-->
+    <p name="result">Hello</p>
+    <script>const value2 = document.getElementsByName("result")[1];</script>
+
+    <script>const value3 = document.getElementsByName("result").length("result")[2];</script>
+<p>this is me </p>
+<p>this is you</p>
+<!--get element by tag name()-->
+    <script>
+        const result = document.getElementsByTagName("p");
+        console.log(result);
+    </script>
+
+    <p class="Here">THIS IS ME</p>
+    <p class="There">THIS IS YOU</p>
+
+<script>
+    const value4 = document.querySelector(".Here");
+    const value5 = document.querySelector(".There");
+</script>
+
+    <script>
+        console.log(value);
+        console.log(value2);
+        console.log(value3);
+        console.log(value4);
+        console.log(value5);
+    </script>
+</body>
+</html>

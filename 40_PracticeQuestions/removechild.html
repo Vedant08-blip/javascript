@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>removeChild Example</title>
+</head>
+<body>
+
+<div id="parent">
+  <p id="child">This is a child paragraph.</p>
+</div>
+
+<button onclick="removeChildElement()">Remove Child</button>
+
+<script>
+  function removeChildElement() {
+    let parent = document.getElementById("parent");
+    let child = document.getElementById("child");
+    parent.removeChild(child);
+  }
+</script>
+<ul>
+  <li>Orange</li>
+  <li>Apple</li>
+  <li>Banana</li>
+</ul>
+<script>
+  let newli=document.createElement("li");
+  newli.textContent="Mango";
+  let ul=document.getElementById("fruits");
+  let firstli=ul.firstElementChild;
+  list.insertBefore(newli, fruitsItem);
+</script>
+
+</body>
+</html>

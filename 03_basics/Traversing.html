@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+    <p class="text">Hello World</p>
+    <p class="text">Hello Universe</p>
+    <p class="text">Hello Galaxy</p>
+</div>
+<script>
+    let box=document.getElementById("container");
+    console.log(box.firstElementChild.innertextHTML); 
+    console.log(box.lastElementChild.innertextHTML); 
+    console.log(box.children.length); 
+    console.log(box.childElementCount); 
+    
+</script>
+
+    <div id="Outer">
+        <p id="Inner">This is my paragraph</p>
+    </div>
+    <script>
+        let paragraph = document.getElementById("Inner");
+        let resultdiv = para.parentelement;
+        console.log(resultdiv); // This will log the parent element of the paragraph, which is the div with id "Outer"
+
+    </script>
+    <div>
+        <h2>This is my heading</h2>
+        <p id="res">this is my paragraph</p>
+        <span>End of an era</span>
+    </div>
+
+    <script>
+        let para=document.getElementById("res");
+        let next=para.nextElementSibling;
+        console.log(next); // This will log the next sibling element of the paragraph, which is the span element
+        // let prev=para.previousElementSibling;
+        // console.log(prev); // This will log the previous sibling element of the paragraph, which is the h2 element
+        let parent=para.parentElement;
+        console.log(parent); // This will log the parent element of the paragraph, which is the div element
+        let child=parent.children;
+        console.log(child); // This will log all the child elements of the parent div, which includes the h2 and span elements
+        
+     </script>
+
+
+     <script>
+        document.getElementById("message").innerHTML = "<p>This is a new <strong>paragraph</strong></p>";
+     </script>
+     <script>
+        let box1 = document.getElementById("target");
+
+     </script>
+
+     <script>
+        let newP=document.createElement("p");
+        newP.textContent="This is a new paragraph";
+        let oldP=document.getElementById("old");
+        document.getElementById("box").replaceChild(newP, oldP);
+     </script>
+        
+</body>
+</html>
